@@ -103,7 +103,7 @@ Shader "ThisIsUnityTH/BlendTwoCubemapsWithGlowEdge"
 
                 float3 glow = _EdgeGlowColor.rgb  * edgeFade ;
 
-                return lerp(colorA, colorB, blendMask) + float4(glow, 0);
+                return lerp(colorB, colorA, blendMask) + float4(glow, 0);
             }
             ENDCG
         }

@@ -6,8 +6,8 @@ namespace Menstood
     public class WorldFading : MonoBehaviour
     {
         [Header("Fade Settings")]
-        public float startValue = -5f;
-        public float endValue = 5f;
+        public float startValue = 0f;
+        public float endValue = 1f;
         public float duration = 3f;
 
         [Header("Behavior")]
