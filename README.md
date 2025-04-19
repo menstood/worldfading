@@ -1,8 +1,64 @@
 # Worldfading
 
-👉 English down below 👇 [Jump to English](#-english)
+A high-performance skybox blending shader for Unity, featuring directional cubemap transitions, procedural dissolve, and HDR glow edge effects. Designed for cinematic environment shifts and seamless world transitions. Supports global control via `_WorldFading` and is optimized for runtime performance with branchless masking.
+
+👉 ภาษาไทยอยู่ข้างล่าง 👇 [จิ้ม](#-ภาษาไทย)
 
 ![Skybox Fading Preview](media/preview.gif)
+
+## 🌐 English
+
+🧩 Compatible with **Unity 2022.3 or newer**
+
+## 🔧 Installation
+
+You can import this package directly from the Unity Editor:
+
+1. Open Unity and go to `Window > Package Manager`
+2. Click the `+` button (top-left), then select `Add package from git URL...`
+3. Paste in the following URL:
+
+```
+https://github.com/menstood/worldfading.git
+```
+
+4. Click **Add** — Unity will automatically fetch and install the package 🎉
+
+## 🛠 How to Use
+
+### 🔹 1. Create and Configure Material
+
+1. Go to `Assets > Create > Material`
+2. Set the Shader to `Skybox/BlendTwoCubemapsWithGlowEdge`
+3. Assign cubemaps:
+   - `_CubemapA`: Your starting skybox
+   - `_CubemapB`: The one you want to transition into
+
+### 🔹 2. Apply Material to Scene
+
+1. Go to `Window > Rendering > Lighting`
+2. In the Environment section, assign the material to **Skybox Material**
+
+### 🔹 3. Attach WorldFading.cs
+
+1. Add the script `WorldFading.cs` to any GameObject in your scene
+
+### 🔹 4. Control the Skybox Transition
+
+- For automatic tweening:  
+  Call `Play()` in your script
+
+- For manual control:
+
+```csharp
+Shader.SetGlobalFloat("_WorldFading", 0.5f); // 0 = A, 1 = B
+```
+
+#### 🔹 5. Done! Your skybox will now transition with a cool dissolve and glow effect 🔥
+
+👉 Follow me at [facebook.com/thisisunityth](https://www.facebook.com/thisisunityth)
+
+---
 
 ## 🌐 ภาษาไทย
 
@@ -20,7 +76,12 @@ Blend ระหว่างสอง cubemap ตามมุมกล้อง +
 
 1. เปิด Unity แล้วไปที่ `Window > Package Manager`
 2. กดปุ่ม `+` ด้านบนซ้าย แล้วเลือก `Add package from git URL...`
-3. วาง URL นี้ลงไป: `https://github.com/menstood/worldfading.git`
+3. วาง URL นี้ลงไป:
+
+```
+https://github.com/menstood/worldfading.git
+```
+
 4. กด Add แล้วรอ Unity ติดตั้งแพ็กเกจให้เรียบร้อย 🎉
 
 ## 🛠 วิธีใช้งาน
@@ -58,56 +119,3 @@ Shader.SetGlobalFloat("_WorldFading", 0.5f); // 0 = A, 1 = B
 👉 ติดตามผลงานอื่น ๆ ได้ที่ [นี่หรือUnity บน Facebook](https://www.facebook.com/thisisunityth)
 
 ---
-
-## 🌐 English
-
-🧩 Compatible with **Unity 2022.3 or newer**
-
-A high-performance skybox blending shader for Unity, featuring directional cubemap transitions, procedural dissolve, and HDR glow edge effects. Designed for cinematic environment shifts and seamless world transitions. Supports global control via `_WorldFading` and is optimized for runtime performance with branchless masking.
-
-## 🔧 Installation
-
-You can import this package directly from the Unity Editor:
-
-1. Open Unity and go to `Window > Package Manager`
-2. Click the `+` button (top-left), then select `Add package from git URL...`
-3. Paste in the following URL: `https://github.com/menstood/worldfading.git`
-4. Click **Add** — Unity will automatically fetch and install the package 🎉
-
-## 🛠 How to Use
-
-### 🔹 1. Create and Configure Material
-
-1. Go to `Assets > Create > Material`
-2. Set the Shader to `Skybox/BlendTwoCubemapsWithGlowEdge`
-3. Assign cubemaps:
-   - `_CubemapA`: Your starting skybox
-   - `_CubemapB`: The one you want to transition into
-
-### 🔹 2. Apply Material to Scene
-
-1. Go to `Window > Rendering > Lighting`
-2. In the Environment section, assign the material to **Skybox Material**
-
-### 🔹 3. Attach WorldFading.cs
-
-1. Add the script `WorldFading.cs` to any GameObject in your scene
-
-### 🔹 4. Control the Skybox Transition
-
-- For automatic tweening:  
-  Call `Play()` in your script
-
-- For manual control:
-
-```csharp
-Shader.SetGlobalFloat("_WorldFading", 0.5f); // 0 = A, 1 = B
-```
-
-#### 🔹 5. Done! Your skybox will now transition with a cool dissolve and glow effect 🔥
-
-👉 Follow me at [facebook.com/thisisunityth](https://www.facebook.com/thisisunityth)
-
-```
-
-```
