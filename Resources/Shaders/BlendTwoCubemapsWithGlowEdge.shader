@@ -1,4 +1,4 @@
-Shader "ThisIsUnityTH/BlendTwoCubemapsWithGlowEdge"
+Shader "Menstood/BlendTwoCubemapsWithGlowEdge"
 {
     Properties
     {

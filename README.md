@@ -29,7 +29,7 @@ https://github.com/menstood/worldfading.git
 ### 🔹 1. Create and Configure Material
 
 1. Go to `Assets > Create > Material`
-2. Set the Shader to `Skybox/BlendTwoCubemapsWithGlowEdge`
+2. Set the Shader to `Menstood/BlendTwoCubemapsWithGlowEdge`
 3. Assign cubemaps:
    - `_CubemapA`: Your starting skybox
    - `_CubemapB`: The one you want to transition into
@@ -89,7 +89,7 @@ https://github.com/menstood/worldfading.git
 #### 🔹 1. สร้าง Material และตั้งค่า Shader
 
 1. ไปที่ `Assets > Create > Material`
-2. ตั้ง Shader เป็น `Skybox/BlendTwoCubemapsWithGlowEdge`
+2. ตั้ง Shader เป็น `Menstood/BlendTwoCubemapsWithGlowEdge`
 3. ตั้งค่า Cubemap ให้กับ:
    - `_CubemapA`: Skybox เริ่มต้น
    - `_CubemapB`: Skybox ปลายทางที่อยาก transition ไป
