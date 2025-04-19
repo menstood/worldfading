@@ -1,6 +1,6 @@
 # Worldfading
 
-👉 English down below 👇 [Jump to English](#english)
+👉 English down below 👇 [Jump to English](#-english)
 
 ![Skybox Fading Preview](media/preview.gif)
 
