@@ -119,3 +119,9 @@ Shader.SetGlobalFloat("_WorldFading", 0.5f); // 0 = A, 1 = B
 👉 ติดตามผลงานอื่น ๆ ได้ที่ [นี่หรือUnity บน Facebook](https://www.facebook.com/thisisunityth)
 
 ---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
