@@ -4,7 +4,7 @@ A high-performance skybox blending shader for Unity, featuring directional cubem
 
 👉 ภาษาไทยอยู่ข้างล่าง 👇 [จิ้ม](#-ภาษาไทย)
 
-![Skybox Fading Preview](media/preview.gif)
+![Skybox Fading Preview](media~/preview.gif)
 
 ## 🌐 English
 
